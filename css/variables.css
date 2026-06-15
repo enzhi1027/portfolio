@@ -1,0 +1,26 @@
+:root {
+  /* 색상 팔레트 */
+  --color-bg: #091413;
+  --color-primary: #285a48;
+  --color-secondary: #408a71;
+  --color-accent: #b0e4cc;
+  --color-text: #f5f7f6;
+
+  /* 폰트 변수 */
+  --font-main: "Noto Sans KR", system-ui, sans-serif;
+  --font-display: "Syne", "Noto Sans KR", sans-serif;
+
+  /* 간격 변수 */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+  /* 반응형 breakpoint 변수 */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+}

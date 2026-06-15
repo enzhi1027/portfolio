@@ -1,0 +1,228 @@
+/* 전역 기본 스타일 */
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+/* 키보드 포커스 접근성 */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* 섹션 공통 스타일 */
+.section {
+  padding: var(--space-2xl) var(--space-md);
+  overflow-x: clip;
+  max-width: 100%;
+  scroll-margin-top: 50px;
+}
+
+.section__inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-width: 0;
+}
+
+/* 상단 고정 네비게이션 */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(9, 20, 19, 0.92);
+  border-bottom: 1px solid var(--color-primary);
+  backdrop-filter: blur(8px);
+}
+
+.site-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-md);
+  gap: var(--space-md);
+}
+
+.site-nav__logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--color-accent);
+}
+
+.site-nav__menu {
+  display: none;
+  list-style: none;
+  gap: var(--space-lg);
+}
+
+.site-nav__link {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  opacity: 0.75;
+  transition:
+    opacity 0.2s ease,
+    color 0.2s ease;
+}
+
+.site-nav__link:hover,
+.site-nav__link.active {
+  opacity: 1;
+  color: var(--color-accent);
+}
+
+/* 햄버거 메뉴 버튼 (모바일) */
+.site-nav__toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: var(--space-xs);
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.site-nav__toggle-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text);
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* 햄버거 메뉴 열림 상태 */
+.site-nav__toggle.is-open .site-nav__toggle-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.site-nav__toggle.is-open .site-nav__toggle-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.site-nav__toggle.is-open .site-nav__toggle-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.site-nav__menu.is-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: var(--space-md);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+/* 메인 콘텐츠: 고정 nav 높이 보정 */
+main {
+  padding-top: 4.5rem;
+}
+
+/* fade-in 애니메이션 대상 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 반응형: 태블릿 이상 */
+@media (min-width: 768px) {
+  .section {
+    padding: var(--space-2xl) var(--space-xl);
+  }
+
+  .site-nav__toggle {
+    display: none;
+  }
+
+  .site-nav__menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+}
+
+/* 반응형: 데스크톱 */
+@media (min-width: 1024px) {
+  .section__inner {
+    max-width: 1200px;
+  }
+}
+
+/* Footer */
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-xl) var(--space-md);
+  border-top: 1px solid var(--color-primary);
+  text-align: center;
+}
+
+.site-footer__copy {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+.site-footer__link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  transition: opacity 0.2s ease;
+}
+
+.site-footer__link:hover {
+  opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+  }
+}

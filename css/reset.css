@@ -1,0 +1,21 @@
+/* 기본 박스 모델 및 여백 초기화 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 이미지 기본 스타일 초기화 */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 링크 기본 스타일 초기화 */
+a {
+  color: inherit;
+  text-decoration: none;
+}

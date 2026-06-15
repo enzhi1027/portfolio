@@ -1,0 +1,268 @@
+/* Experience 섹션 */
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.experience__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* 탭 버튼 */
+.experience__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.experience__tab {
+  padding: var(--space-sm) var(--space-lg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+
+.experience__tab:hover {
+  opacity: 1;
+  border-color: var(--color-secondary);
+  color: var(--color-accent);
+}
+
+.experience__tab.is-active {
+  opacity: 1;
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: var(--color-bg);
+}
+
+/* 탭 패널 */
+.experience__panels {
+  position: relative;
+  min-height: 10rem;
+}
+
+.experience__panel {
+  display: none;
+}
+
+.experience__panel.is-active {
+  display: block;
+}
+
+/* 타임라인 UI */
+.experience__timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  list-style: none;
+  padding-left: var(--space-xl);
+}
+
+.experience__timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.4375rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-secondary), var(--color-primary));
+}
+
+.experience__timeline-item {
+  position: relative;
+}
+
+/* 원형 점 */
+.experience__timeline-dot {
+  position: absolute;
+  left: calc(-1 * var(--space-xl) + 0.125rem);
+  top: 1.25rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-bg);
+  box-shadow: 0 0 0 2px var(--color-secondary);
+}
+
+/* 타임라인 카드 */
+.experience__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background-color: rgba(40, 90, 72, 0.12);
+  border: 1px solid var(--color-primary);
+  border-radius: 12px;
+}
+
+.experience__status {
+  align-self: flex-start;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background-color: rgba(64, 138, 113, 0.25);
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+}
+
+.experience__card-title {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.experience__card-subtitle {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+.experience__period {
+  font-size: 0.8125rem;
+  color: var(--color-text);
+  opacity: 0.65;
+}
+
+.experience__note {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-accent);
+  opacity: 0.9;
+}
+
+/* 교육 skills 태그 */
+.experience__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  list-style: none;
+  margin-top: var(--space-xs);
+}
+
+.experience__skill {
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  background-color: rgba(64, 138, 113, 0.2);
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+}
+
+/* 자격증 카드 */
+.experience__cert-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+.experience__cert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background-color: rgba(40, 90, 72, 0.12);
+  border: 1px solid var(--color-primary);
+  border-radius: 12px;
+}
+
+.experience__cert-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.experience__cert-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.experience__cert-name {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.experience__cert-issuer {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+.experience__cert-date {
+  font-size: 0.8125rem;
+  color: var(--color-accent);
+  opacity: 0.9;
+}
+
+/* 활동 리스트 카드 */
+.experience__activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.experience__activity {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background-color: rgba(40, 90, 72, 0.12);
+  border: 1px solid var(--color-primary);
+  border-radius: 12px;
+}
+
+.experience__activity-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.experience__activity-desc {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  opacity: 0.85;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 767px) {
+  .experience__timeline {
+    padding-left: var(--space-lg);
+  }
+
+  .experience__timeline-dot {
+    left: calc(-1 * var(--space-lg) + 0.125rem);
+  }
+
+  .experience__tabs {
+    gap: var(--space-xs);
+  }
+
+  .experience__tab {
+    padding: var(--space-xs) var(--space-md);
+    font-size: 0.8125rem;
+  }
+
+  .experience__cert-list {
+    grid-template-columns: 1fr;
+  }
+}

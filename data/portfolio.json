@@ -1,0 +1,323 @@
+{
+  "hero": {
+    "name": "이은지",
+    "nameEn": "Eunji Lee",
+    "tagline": "클라우드 배포까지 직접 경험한 풀스택 개발자",
+    "subTagline": "Java · Spring Boot · AWS로 서비스를 설계하고 운영합니다",
+    "ctaPrimary": {
+      "label": "이력서 다운로드",
+      "href": "/resume.pdf"
+    },
+    "ctaSecondary": {
+      "label": "GitHub 보기",
+      "href": "https://github.com/enzhi1027"
+    },
+    "scrollIndicator": true
+  },
+  "about": {
+    "summary": "안녕하세요, 풀스택 개발자를 목표로 하는 이은지입니다. 단순히 기능을 구현하는 것에 그치지 않고 Docker와 AWS를 활용해 직접 배포하고 운영하는 경험을 쌓아왔습니다. 스타트업과 중소기업 환경에서 빠르게 기여할 수 있는 개발자가 되고자 합니다.",
+    "keywords": ["풀스택 개발", "클라우드 인프라", "RESTful API", "협업 중심"],
+    "profileImage": "/images/profile.jpg",
+    "initials": "EJ",
+    "availableForWork": true,
+    "availableLabel": "현재 취업 준비 중"
+  },
+  "techStack": {
+    "categories": [
+      {
+        "name": "Backend",
+        "items": [
+          {
+            "name": "Java",
+            "level": 4,
+            "note": "주력 언어, OOP 기반 설계 경험"
+          },
+          {
+            "name": "Spring Boot",
+            "level": 4,
+            "note": "REST API · JWT 인증 구현"
+          },
+          { "name": "Spring Security", "level": 3, "note": "" }
+        ]
+      },
+      {
+        "name": "Database",
+        "items": [
+          {
+            "name": "MySQL",
+            "level": 4,
+            "note": "Docker 컨테이너 및 AWS RDS 운용"
+          },
+          {
+            "name": "Oracle",
+            "level": 3,
+            "note": "쿼리 튜닝 · 절차형 SQL 경험"
+          }
+        ]
+      },
+      {
+        "name": "Infra / DevOps",
+        "items": [
+          {
+            "name": "Docker",
+            "level": 3,
+            "note": "Compose 기반 멀티 컨테이너 구성"
+          },
+          {
+            "name": "AWS EC2",
+            "level": 3,
+            "note": "서버 배포 · Elastic IP 운용"
+          },
+          { "name": "AWS RDS", "level": 3, "note": "MySQL 관리형 DB 사용" },
+          {
+            "name": "AWS S3",
+            "level": 3,
+            "note": "파일 업로드 · 정적 자산 관리"
+          },
+          { "name": "AWS CloudFront", "level": 2, "note": "CDN 배포 경험" }
+        ]
+      },
+      {
+        "name": "Frontend",
+        "items": [
+          { "name": "React", "level": 3, "note": "Vite 기반, 백엔드 연동 중심" }
+        ]
+      }
+    ],
+    "levelGuide": {
+      "1": "입문",
+      "2": "기초 활용",
+      "3": "독립 구현 가능",
+      "4": "심화 활용",
+      "5": "전문가"
+    }
+  },
+  "projects": [
+    {
+      "id": "project-01",
+      "title": "flat",
+      "subtitle": "뮤지컬 · 연극 관람 통합 플랫폼",
+      "period": "2026.06 – 진행중",
+      "teamSize": 1,
+      "role": "기획 · 설계 · 개발 전담",
+      "description": "뮤지컬과 연극 관람객을 위한 올인원 플랫폼. 배우 스케줄, 관극 일정 관리, 시야 확인, 티켓팅 연습, 양도·교환 게시판, 관극 리포트 기능을 제공한다.",
+      "techStack": ["Spring Boot", "React", "MySQL", "AWS", "OpenAI API"],
+      "features": [
+        "배우 스케줄 조회",
+        "개인 관극 일정 관리",
+        "그룹 일정 공유",
+        "공연장 시야 정보 제공",
+        "티켓팅 연습 기능",
+        "도장 계산기",
+        "양도 및 교환 게시판",
+        "관극 리포트 작성"
+      ],
+      "architectureDiagram": "",
+      "github": "https://github.com/enzhi1027/flat",
+      "liveUrl": "",
+      "demoVideo": "",
+      "thumbnail": "/images/projects/flat-thumb.png",
+      "highlights": "실제 공연 팬으로서의 경험을 바탕으로 문제를 발견하고 직접 해결하기 위해 개발 중인 프로젝트"
+    },
+    {
+      "id": "project-02",
+      "title": "맛맛곳곳",
+      "subtitle": "맛집 추천 및 먹투어 코스 설계 플랫폼",
+      "period": "2026.05 – 2026.06",
+      "teamSize": 4,
+      "role": "풀스택 개발",
+      "description": "지역 맛집 정보 제공, 리뷰 기반 추천, 먹투어 코스 설계 기능을 제공하는 맛집 탐색 서비스.",
+      "techStack": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "MySQL",
+        "AWS EC2",
+        "REST API"
+      ],
+      "features": [
+        "맛집 검색 및 상세 조회",
+        "리뷰 및 평점 시스템",
+        "먹투어 코스 설계",
+        "즐겨찾기 기능",
+        "추천 맛집 제공"
+      ],
+      "architectureDiagram": "",
+      "github": "https://github.com/enzhi1027/matmatgotgot",
+      "liveUrl": "",
+      "demoVideo": "",
+      "thumbnail": "/images/projects/matmat-thumb.png",
+      "highlights": "여행과 맛집 탐색 경험을 결합하여 사용자가 직접 먹투어 코스를 설계할 수 있도록 구현한 프로젝트"
+    },
+    {
+      "id": "project-03",
+      "title": "LeafyGo",
+      "subtitle": "생태관광 플랫폼 및 투어 상품 서비스",
+      "period": "2026.03 – 2026.04",
+      "teamSize": 4,
+      "role": "풀스택 개발",
+      "description": "생태관광지 정보 제공, 관광 코스 설계, 투어 상품 예약 기능을 제공하는 친환경 관광 플랫폼.",
+      "techStack": ["Java", "Spring Boot", "React", "MySQL", "AWS", "REST API"],
+      "features": [
+        "생태관광지 검색",
+        "관광 코스 설계",
+        "투어 상품 조회 및 예약",
+        "지역 기반 관광 정보 제공",
+        "사용자 맞춤 추천 기능"
+      ],
+      "architectureDiagram": "",
+      "github": "https://github.com/enzhi1027/leafygo",
+      "liveUrl": "",
+      "demoVideo": "",
+      "thumbnail": "/images/projects/leafygo-thumb.png",
+      "highlights": "생태관광 활성화를 목표로 관광 정보와 상품 예약 기능을 통합한 플랫폼"
+    },
+    {
+      "id": "project-04",
+      "title": "사랑해조",
+      "subtitle": "커플 라이프 통합 플랫폼",
+      "period": "2024.09 – 2024.10",
+      "teamSize": 4,
+      "role": "풀스택 개발",
+      "description": "커플 가계부, AI 연애상담, 연애고사, 오늘의 질문, 음식 추천, 캘린더 등 연인들을 위한 다양한 기능을 제공하는 서비스.",
+      "techStack": [
+        "Java",
+        "JSP",
+        "Servlet",
+        "Oracle",
+        "JavaScript",
+        "OpenAI API"
+      ],
+      "features": [
+        "커플 가계부",
+        "AI 연애상담",
+        "연애고사",
+        "오늘 뭐 먹지 추천",
+        "오늘의 질문",
+        "커플 캘린더",
+        "구글 포토 앨범 연동"
+      ],
+      "architectureDiagram": "",
+      "github": "https://github.com/enzhi1027/love-project",
+      "liveUrl": "",
+      "demoVideo": "",
+      "thumbnail": "/images/projects/love-thumb.png",
+      "highlights": "AI 기능을 실제 서비스에 적용하며 사용자 참여형 기능을 다양하게 구현한 프로젝트"
+    },
+    {
+      "id": "project-05",
+      "title": "우리 여행가조",
+      "subtitle": "여행 계획 공유 및 일정 관리 플랫폼",
+      "period": "2024.07 – 2024.09",
+      "teamSize": 3,
+      "role": "풀스택 개발",
+      "description": "사용자들이 여행 일정을 생성하고 공유할 수 있는 여행 계획 플랫폼. 일정 관리와 여행 정보 공유를 중심으로 구현하였다.",
+      "techStack": [
+        "Java",
+        "JSP",
+        "Servlet",
+        "Oracle",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "features": [
+        "여행 일정 생성 및 관리",
+        "여행 계획 공유",
+        "여행지 정보 조회",
+        "회원 관리 및 로그인",
+        "커뮤니티 게시판"
+      ],
+      "architectureDiagram": "",
+      "github": "https://github.com/enzhi1027/travel-project",
+      "liveUrl": "",
+      "demoVideo": "",
+      "thumbnail": "/images/projects/travel-thumb.png",
+      "highlights": "첫 팀 프로젝트로 협업 개발 경험과 웹 서비스 개발 프로세스를 익힌 프로젝트"
+    }
+  ],
+  "experience": {
+    "education": [
+      {
+        "type": "university",
+        "institution": "고려사이버대학교",
+        "major": "AI컴퓨터공학과",
+        "degree": "학사",
+        "period": "2024.03 – 2028.02",
+        "status": "재학",
+        "note": "AI와 소프트웨어 개발을 중심으로 학습 중"
+      }
+    ],
+    "training": [
+      {
+        "type": "bootcamp",
+        "institution": "KH정보교육원",
+        "courseName": "(디지털컨버전스) 공공데이터 융합 자바개발자 양성과정A30(8)",
+        "period": "2024.05 – 2024.10",
+        "hours": "896시간",
+        "skills": [
+          "Java",
+          "JSP",
+          "Servlet",
+          "Oracle",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "jQuery",
+          "Ajax",
+          "MyBatis"
+        ],
+        "status": "수료"
+      },
+      {
+        "type": "bootcamp",
+        "institution": "KH정보교육원",
+        "courseName": "프로젝트 기반 AWS 풀스택 웹 개발자 양성",
+        "period": "2025.12 – 2026.07",
+        "hours": "1064시간",
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "React",
+          "MySQL",
+          "Docker",
+          "AWS",
+          "REST API",
+          "Git",
+          "Linux"
+        ],
+        "status": "수료"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "SQLD",
+        "issuer": "한국데이터산업진흥원",
+        "date": "2024.09",
+        "status": "취득"
+      }
+    ],
+    "activities": [
+      {
+        "title": "",
+        "period": "",
+        "description": ""
+      }
+    ]
+  },
+  "contact": {
+    "email": "enzhi1027@gmail.com",
+    "phone": "010-6869-1027",
+    "github": "https://github.com/enzhi1027",
+    "linkedin": "https://www.linkedin.com/in/eunji-lee-a2558b274?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    "blog": "",
+    "formEnabled": true,
+    "formPlaceholder": {
+      "name": "이름",
+      "email": "이메일",
+      "message": "메시지를 입력해 주세요",
+      "submit": "보내기"
+    },
+    "responseNote": "메시지는 24시간 내로 답변드리겠습니다."
+  }
+}
