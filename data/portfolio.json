@@ -174,7 +174,7 @@
     },
     {
       "id": "project-04",
-      "title": "사랑해조",
+      "title": "UsTwo",
       "subtitle": "커플 라이프 통합 플랫폼",
       "period": "2024.09 – 2024.10",
       "teamSize": 4,
@@ -198,10 +198,10 @@
         "구글 포토 앨범 연동"
       ],
       "architectureDiagram": "",
-      "github": "https://github.com/enzhi1027/love-project",
+      "github": "https://github.com/enzhi1027/UsTwo",
       "liveUrl": "",
       "demoVideo": "",
-      "thumbnail": "/images/projects/love-thumb.png",
+      "thumbnail": "/images/projects/usTwo-thumb.png",
       "highlights": "AI 기능을 실제 서비스에 적용하며 사용자 참여형 기능을 다양하게 구현한 프로젝트"
     },
     {
