@@ -95,7 +95,7 @@
   "projects": [
     {
       "id": "project-01",
-      "title": "flat",
+      "title": "flot",
       "subtitle": "뮤지컬 · 연극 관람 통합 플랫폼",
       "period": "2026.06 – 진행중",
       "teamSize": 1,
@@ -113,10 +113,10 @@
         "관극 리포트 작성"
       ],
       "architectureDiagram": "",
-      "github": "https://github.com/enzhi1027/flat",
+      "github": "https://github.com/enzhi1027/flot",
       "liveUrl": "http://54.116.130.7:8082/",
       "demoVideo": "",
-      "thumbnail": "/images/projects/flat-thumb.png",
+      "thumbnail": "/images/projects/flot-thumb.png",
       "highlights": "실제 공연 팬으로서의 경험을 바탕으로 문제를 발견하고 직접 해결하기 위해 개발 중인 프로젝트"
     },
     {
